@@ -89,13 +89,12 @@ h2.widget-title {
 }
 
 .copyright {
-  background-color: $text-color;
+  background-color: $white-color;
   border-top: 1px solid #232a35;
 
   p{
     margin: 0;
-    color: #fff;
-    opacity: 0.7;
+    color: $text-color;
     padding: 16px 0;
     font-size: 15px;
   }
@@ -112,14 +111,18 @@ h2.widget-title {
   margin: 0;
   padding: 0;
   list-style: none;
+  cursor: pointer;
 
   li {
     display: inline-block;
+    transition: all 0.3s;
+    &:hover {
+      transform: translateY(-5%);
+    }
 
     a {
       font-size: 16px;
       color: #fff;
-      opacity: 0.7;
       padding: 16px 10px;
       display: block;
     }

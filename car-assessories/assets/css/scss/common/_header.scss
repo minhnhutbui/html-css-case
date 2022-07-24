@@ -13,7 +13,6 @@ ul.navbar-nav li.nav-item {
   position: absolute;
   z-index: 999;
   width: 100%;
-  padding: 25px 0;
 
   &.white ul.navbar-nav li.nav-item {
     a.nav-link, &.active a.nav-link {
@@ -98,7 +97,6 @@ nav.main-menu {
 }
 
 .site-logo {
-  float: left;
   max-width: 150px;
 }
 
@@ -118,7 +116,9 @@ ul.sub-menu li:last-child {
 }
 
 .main-menu-wrap {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .mean-container {
@@ -164,6 +164,13 @@ nav.mean-nav > ul > li:first-child > a {
 
 .site-logo {
   padding: 6px 0;
+  a {
+    display: block;
+    height: 100%;
+    img {
+      height: 100%;
+    }
+  }
 }
 
 .top-header-area.sepherate-header {
@@ -218,7 +225,7 @@ nav.main-menu {
 
   &.is-sticky .top-header-area {
     background-color: $text-color;
-    padding: 15px 0;
+    padding: 5px 0;
   }
 }
 
